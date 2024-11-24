@@ -1,18 +1,42 @@
-## Getting Started
+# Gerenciador de Lojas e Produtos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
+Este projeto consiste em uma aplicação para gerenciar lojas e produtos, implementando diferentes tipos de lojas com características específicas. Foi desenvolvido para um desafio da faculdade na disciplina de Programação.
 
-## Folder Structure
+## Funcionalidades
+- **Alimentação**: Representa lojas do ramo alimentício e armazena a data do alvará de funcionamento.
+- **Bijuteria**: Armazena a meta de vendas da loja de bijuterias.
+- **Cosmético**: Representa lojas de cosméticos e armazena a taxa de comercialização.
+- **Informatica**: Armazena o valor do seguro dos eletrônicos vendidos na loja.
+- **Vestuario**: Indica se a loja de vestuário vende produtos importados.
+- **Produto**: Representa os produtos vendidos nas lojas, incluindo nome, preço e data de validade.
+- **Loja**: Superclasse que gerencia produtos no estoque.
+- **Shopping**: Gerencia um conjunto de lojas, permitindo inserir e remover lojas, além de calcular a quantidade de lojas por tipo e a loja de informática com o seguro mais caro.
 
-The workspace contains two folders by default, where:
+## Estrutura do Projeto
+O projeto está organizado nas seguintes classes:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `Alimentacao`
+- `Bijuteria`
+- `Cosmetico`
+- `Data`
+- `Endereco`
+- `Informatica`
+- `Loja`
+- `Produto`
+- `Shopping`
+- `Vestuario`
+- `Principal`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Pré-requisitos
+- Java Development Kit (JDK) 8 ou superior
+- IDE Java (Eclipse, IntelliJ, BlueJ, etc.)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Como Compilar e Executar
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Compilar
+1. Abra seu terminal ou prompt de comando.
+2. Navegue até o diretório do projeto.
+3. Compile os arquivos `.java` utilizando o comando:
+   ```sh
+   javac Etapa4/*.java
